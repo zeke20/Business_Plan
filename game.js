@@ -21,6 +21,8 @@ class ObjectToFind {
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
+
+
 canvas.width = 800;
 canvas.height = 400;
 
@@ -67,7 +69,7 @@ function handleClick(event) {
     if (!currentObject.found && currentObject.isClicked(mouseX, mouseY)) {
         currentObject.found = true;
         clicks++;
-            alert("Congratulations! You found all objects.");
+            alert("Congratulations! You found the object.");
             canvas.removeEventListener("click", handleClick);
         
     } else if (!currentObject.found) {
