@@ -39,7 +39,7 @@ function drawScene() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     const sceneImage = new Image();
-    sceneImage.src = "scene.jpg"; // Replace with your image URL
+    sceneImage.src = "https://ibb.co/99Qc1Kh"; // Replace with your image URL
     ctx.drawImage(sceneImage, 0, 0, canvas.width, canvas.height);
 
     const currentObject = objectsToFind[currentObjectIndex];
