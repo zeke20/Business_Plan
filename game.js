@@ -24,7 +24,7 @@ const ctx = canvas.getContext("2d");
 
 
 canvas.width = 800;
-canvas.height = 800;
+canvas.height = 600;
 
 const objectsToFind = [
     new ObjectToFind("Key", 300, 200, 50, 50), // Replace with your image-specific objects
