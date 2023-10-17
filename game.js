@@ -27,7 +27,7 @@ canvas.width = 800;
 canvas.height = 600;
 
 const objectsToFind = [
-    new ObjectToFind("Key", 375, 520, 50, 50), // Replace with your image-specific objects
+    new ObjectToFind("Key", 370, 550, 20, 20), // Replace with your image-specific objects
     // Add more objects for other images here
 ];
 
