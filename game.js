@@ -84,6 +84,18 @@ function handleClick(event) {
     drawScene();
 }
 
+let timeLimit = 20;
+let timeLeft = timeLimit;
+
+function updateTimer() {
+    if(timeLeft > 0) {
+        timeLeft--;
+        setTimeout(updateTimer, 1000);
+    } else {
+        alert("Time's up! Game over.");
+        canvas.removeEventListener("click", handleClick);
+    }
+}
 canvas.addEventListener("click", handleClick);
 
 drawScene();
