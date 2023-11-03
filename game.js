@@ -57,6 +57,8 @@ function drawScene() {
     ctx.fillStyle = "black";
     ctx.font = "20px Arial";
     ctx.fillText(`Clicks: ${clicks}/${maxClicks}`, 10, 30);
+
+    ctx.fillText(`Time Left: ${timeLeft}s`, canvas.width - 150, 30);
 }
 
 function handleClick(event) {
@@ -90,6 +92,7 @@ let timeLeft = timeLimit;
 function updateTimer() {
     if(timeLeft > 0) {
         timeLeft--;
+        drawScene();                    // Redraw the scene to update the time left
         setTimeout(updateTimer, 1000);
     } else {
         alert("Time's up! Game over.");
