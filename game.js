@@ -33,7 +33,7 @@ const objectsToFind = [
 
 let currentObjectIndex = 0; // Start with the first object to find
 let clicks = 0;
-const maxClicks = 10;
+const maxClicks = 2;
 
 function drawScene() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
