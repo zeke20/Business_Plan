@@ -33,7 +33,7 @@ const objectsToFind = [
 
 let currentObjectIndex = 0; // Start with the first object to find
 let clicks = 0;
-const maxClicks = 2;
+const maxClicks = 3;
 
 function drawScene() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -95,6 +95,8 @@ function updateTimer() {
         drawScene();                    // Redraw the scene to update the time left
         setTimeout(updateTimer, 1000);
     } else {
+        timeLeft = 0;
+        drawScene();
         alert("Time's up! Game over.");
         canvas.removeEventListener("click", handleClick);
     }
