@@ -58,7 +58,7 @@ function drawScene() {
     ctx.font = "20px Arial";
     ctx.fillText(`Clicks: ${clicks}/${maxClicks}`, 10, 30);
 
-    ctx.fillText(`Time Left: ${timeLeft}s`, canvas.width - 150, 30);
+    ctx.fillText(`Time Left: ${timeLimit - timeLeft}s`, canvas.width - 150, 30);
 }
 
 function handleClick(event) {
